@@ -7,9 +7,12 @@ namespace FizzBuzz.Classes
     {
         public string Handle(int number)
         {
-            if (number % 3 == 0 && number % 5 == 0)
-                return "FizzBuzz";
-            return number.ToString();
+            return "FizzBuzz";
+        }
+
+        public bool IsDivisible(int number)
+        {
+            return number % 3 == 0 && number % 5 == 0;
         }
     }
 }

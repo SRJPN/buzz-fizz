@@ -1,6 +1,9 @@
 ﻿using FizzBuzz.Interface;
 using FizzBuzz.Classes;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using src.Classes;
 
 namespace FizzBuzz.Main
 {
@@ -14,11 +17,17 @@ namespace FizzBuzz.Main
              * When Number can be divisable both 3 & 5 then print FizzBuzz
              * else print the number
              */
-            IFizzBuzzHandler fizzBuzzHandler = new Classes.FizzBuzz();
+            var fizzBuzzHandlers = new List<IFizzBuzzHandler>(){
+                new Classes.FizzBuzz(),
+                new Fizz(),
+                new Buzz(),
+                new Dummy()
+            };
 
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(fizzBuzzHandler.Handle(i));
+                var handler = fizzBuzzHandlers.FirstOrDefault(handler => handler.IsDivisible(i));
+                Console.WriteLine(handler.Handle(i));
             }
             Console.ReadKey();
         }
