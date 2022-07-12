@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSPTech", "src\NSPTech.csproj", "{0672B948-82C3-43EB-8E7E-A431DB9E5FFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuzzFizz", "src\BuzzFizz.csproj", "{0672B948-82C3-43EB-8E7E-A431DB9E5FFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSPTech.Test", "test\NSPTech.Test.csproj", "{84E241CB-F710-4405-B674-347F98D45082}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuzzFizz.Test", "test\BuzzFizz.Test.csproj", "{84E241CB-F710-4405-B674-347F98D45082}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
